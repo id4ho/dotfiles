@@ -9,6 +9,27 @@ alias ls='ls --color=auto'
 if type nvim > /dev/null 2>&1; then
   alias vim='nvim'
 fi
+alias ll="ls -al"
+alias ln="ln -v"
+alias mkdir="mkdir -p"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# Rails
+alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+
+# Pretty print the path
+alias path='echo $PATH | tr -s ":" "\n"'
+
+# No arguments: `git status`
+# With arguments: acts like `git`
+g() {
+  if [[ $# -gt 0 ]]; then
+    git "$@"
+  else
+    git status
+  fi
+}
 
 source ~/.git-prompt.sh
 GIT_PS1_SHOWCOLORHINTS=true
