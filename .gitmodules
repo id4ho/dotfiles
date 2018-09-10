@@ -1,3 +1,6 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "ctags"]
+	path = ctags
+	url = git@github.com:universal-ctags/ctags.git
