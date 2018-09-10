@@ -5,15 +5,18 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
+alias ls="ls --color=auto"
 if type nvim > /dev/null 2>&1; then
-  alias vim='nvim'
+  alias vim="nvim"
 fi
 alias ll="ls -al"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
+
+# Start ssh-agent with X
+alias startx="ssh-agent startx"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
