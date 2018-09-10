@@ -82,14 +82,15 @@ nnoremap <silent> <leader>gt :TestVisit<CR>
 " " Autocomplete with dictionary words when spell check is on
 " set complete+=kspell
 
-" TODO Colors/Theme
+" Colors/Theme
+syntax enable
 if (has("termguicolors"))
-  " set termguicolors " uncomment this to make this set term gui colors..
+  set termguicolors
 endif
-" colorscheme OceanicNext
+let g:oceanic_next_terminal_bold = 1
+colorscheme OceanicNext
 
 " TODO Syntax
-syntax enable
 " function! MyOnBattery()
 "   return readfile('/sys/class/power_supply/AC/online') == ['0']
 " endfunction

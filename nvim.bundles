@@ -10,5 +10,6 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
