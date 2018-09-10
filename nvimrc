@@ -35,6 +35,20 @@ set autowriteall " Autowrite always (even :qall, :exit etc)
 set history=100  " Don't store really old commands
 set nojoinspaces " Don't use double spaces after join commands
 
+" Always use vertical diffs
+set diffopt+=vertical
+
+" <leader>h to remove search highlights
+nnoremap <silent> <leader>h :nohlsearch<Bar>:echo<CR>
+
+" relative numbers with absolute number of current line
+set relativenumber
+set number
+
+" Different window composition for undotree
+let g:undotree_WindowLayout = 4
+nnoremap <F5> :UndotreeToggle<cr>
+
 " Simple autocomplete using vim builtin
 function! CleverTab(reverse)
   if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
@@ -86,12 +100,3 @@ syntax enable
 " Rust formatting
 let g:rustfmt_autosave = 1
 
-" Always use vertical diffs
-set diffopt+=vertical
-
-" <leader>h to remove search highlights
-nnoremap <silent> <leader>h :nohlsearch<Bar>:echo<CR>
-
-" relative numbers with absolute number of current line
-set relativenumber
-set number
