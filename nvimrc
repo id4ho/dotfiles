@@ -48,6 +48,10 @@ set number
 " Different window composition for undotree
 let g:undotree_WindowLayout = 4
 nnoremap <F5> :UndotreeToggle<cr>
+if has("persistent_undo")
+  set undodir=~/.undodir/
+  set undofile
+endif
 
 " Simple autocomplete using vim builtin
 function! CleverTab(reverse)
