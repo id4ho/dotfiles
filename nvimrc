@@ -29,7 +29,6 @@ set splitright
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
-hi ColorColumn ctermbg=blue guibg=blue
 
 set autowriteall " Autowrite always (even :qall, :exit etc)
 set history=100  " Don't store really old commands
