@@ -1,0 +1,38 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/nvim/init.vim:
+      path: "nvimrc"
+    ~/.config/compton.conf:
+      path: "compton.conf"
+    ~/.config/i3/config:
+      path: "i3config"
+    ~/.config/kitty/kitty.conf:
+      path: "kitty.conf"
+    ~/.bashrc:
+      path: "bashrc"
+    ~/.fehbg:
+      path: "fehbg"
+    ~/.gitconfig:
+      path: "gitconfig"
+    ~/.gitignore_global:
+      path: "gitignore_global"
+    ~/.git-prompt.sh:
+      path: "git-prompt.sh"
+    ~/remove-attention-on-startup.sh:
+      path: "remove-attention-on-startup.sh"
+    ~/.Xmodmap:
+      path: "Xmodmap"
+    ~/.Xresources:
+      path: "Xresources"
+    ~/.xinitrc:
+      path: "xinitrc"
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [vim +'PlugInstall --sync' +qa, Installing vim packages]
+  - [./install-ctags.sh, install ctags]

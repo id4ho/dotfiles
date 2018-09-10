@@ -1,0 +1,5 @@
+[user]
+	email = jack.wilson.v@gmail.com
+	name = jackvnimble
+[core]
+	excludesfile = /home/jackvnimble/.gitignore_global
