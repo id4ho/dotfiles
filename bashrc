@@ -15,8 +15,8 @@ alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
-# Start ssh-agent with X
-alias startx="ssh-agent startx"
+# Ensure ssh_auth_sock var is set (started by systemd)
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"

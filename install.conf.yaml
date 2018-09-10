@@ -33,8 +33,11 @@
       path: "Xresources"
     ~/.xinitrc:
       path: "xinitrc"
+    ~/.config/systemd/user/ssh-agent.service:
+      path: "ssh-agent.service"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [vim +'PlugInstall --sync' +qa, Installing vim packages]
   - [./install-ctags.sh, install ctags]
+  - [systemctl --user enable ssh-agent.service, enable ssh-agent at boot]
