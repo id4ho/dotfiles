@@ -82,10 +82,8 @@ nnoremap <silent> <leader>gt :TestVisit<CR>
 " set complete+=kspell
 
 " Colors/Theme
-syntax enable
-if (has("termguicolors"))
-  set termguicolors
-endif
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 let g:oceanic_next_terminal_bold = 1
 colorscheme OceanicNext
 
