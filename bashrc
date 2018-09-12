@@ -5,10 +5,10 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+alias sudo="sudo "
 alias ls="ls --color=auto"
-if type nvim > /dev/null 2>&1; then
-  alias vim="nvim"
-fi
+alias vi="nvim"
+alias vim="nvim"
 alias ll="ls -al"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
