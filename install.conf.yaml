@@ -35,6 +35,10 @@
       path: "xinitrc"
     ~/.config/systemd/user/ssh-agent.service:
       path: "ssh-agent.service"
+    ~/.config/gtk-3.0/settings.ini:
+      path: "gtk-3.0-settings.ini"
+    ~/.gtkrc-2.0:
+      path: "gtkrc-2.0"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
