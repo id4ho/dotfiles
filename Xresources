@@ -9,21 +9,21 @@ xterm*faceName: "Ubuntu Mono"
 xterm*saveLines: 20000
 
 ! Dracula Xresources palette
-xterm*.foreground: #ffffff
-xterm*.background: #1b2b34
-xterm*.color0:     #000000
-xterm*.color8:     #ec5f67
-xterm*.color1:     #343d46
-xterm*.color9:     #f99157
-xterm*.color2:     #4f5b66
-xterm*.color10:    #fac863
-xterm*.color3:     #65737e
-xterm*.color11:    #99c794
-xterm*.color4:     #a7adba
-xterm*.color12:    #62b3b2
-xterm*.color5:     #c0c5ce
-xterm*.color13:    #6699cc
-xterm*.color6:     #cdd3de
-xterm*.color14:    #c594c5
-xterm*.color7:     #d8dee9
-xterm*.color15:    #ab7967
+! xterm*.foreground: #ffffff
+! xterm*.background: #1b2b34
+! xterm*.color0:     #000000
+! xterm*.color8:     #ec5f67
+! xterm*.color1:     #343d46
+! xterm*.color9:     #f99157
+! xterm*.color2:     #4f5b66
+! xterm*.color10:    #fac863
+! xterm*.color3:     #65737e
+! xterm*.color11:    #99c794
+! xterm*.color4:     #a7adba
+! xterm*.color12:    #62b3b2
+! xterm*.color5:     #c0c5ce
+! xterm*.color13:    #6699cc
+! xterm*.color6:     #cdd3de
+! xterm*.color14:    #c594c5
+! xterm*.color7:     #d8dee9
+! xterm*.color15:    #ab7967
