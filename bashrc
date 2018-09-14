@@ -40,4 +40,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 PROMPT_COMMAND='__git_ps1 "\u@\h:\w" "\\\$ "'
 
+source /usr/share/chruby/chruby.sh
+source /usr/share/chruby/auto.sh
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
