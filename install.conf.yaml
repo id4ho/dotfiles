@@ -35,6 +35,8 @@
       path: "xinitrc"
     ~/.config/systemd/user/ssh-agent.service:
       path: "ssh-agent.service"
+    ~/.tmux.conf:
+      path: "tmux.conf"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
