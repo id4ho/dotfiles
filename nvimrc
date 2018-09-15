@@ -87,11 +87,9 @@ set termguicolors
 let g:oceanic_next_terminal_bold = 1
 colorscheme OceanicNext
 
-" TODO Syntax
 " function! MyOnBattery()
 "   return readfile('/sys/class/power_supply/AC/online') == ['0']
 " endfunction
-
 " " only run neomake after normal mode writes when plugged into AC power 
 " if MyOnBattery()
 "   call neomake#configure#automake('w')
@@ -99,6 +97,7 @@ colorscheme OceanicNext
 "   call neomake#configure#automake('nw', 1000)
 " endif
 
+" Syntax/Formatting
 " Rust formatting
 let g:rustfmt_autosave = 1
 
