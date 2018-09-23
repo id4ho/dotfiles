@@ -37,6 +37,8 @@
       path: "ssh-agent.service"
     ~/.tmux.conf:
       path: "tmux.conf"
+    ~/.config/fontconfig/fonts.conf:
+      path: "fonts.conf"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
