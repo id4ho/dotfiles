@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale '/home/jackvnimble/dotfiles/desktops/andromeda_vacation.jpg'
+feh --bg-scale '/home/jackvnimble/dotfiles/desktops/current_desktop.png' 
