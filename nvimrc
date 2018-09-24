@@ -52,6 +52,11 @@ if has("persistent_undo")
   set undofile
 endif
 
+" Grep configuration
+set grepprg=rg\ --no-heading
+nnoremap K :grep "\b<C-R>=expand("<cword>")<CR>\b"<CR>
+
+
 " Simple autocomplete using vim builtin
 function! CleverTab(reverse)
   if strpart(getline('.'), 0, col('.') - 1) =~ '^\s*$'
@@ -86,16 +91,6 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 set termguicolors
 let g:oceanic_next_terminal_bold = 1
 colorscheme OceanicNext
-
-" function! MyOnBattery()
-"   return readfile('/sys/class/power_supply/AC/online') == ['0']
-" endfunction
-" " only run neomake after normal mode writes when plugged into AC power 
-" if MyOnBattery()
-"   call neomake#configure#automake('w')
-" else
-"   call neomake#configure#automake('nw', 1000)
-" endif
 
 " Syntax/Formatting
 " Rust formatting
