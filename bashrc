@@ -28,6 +28,13 @@ alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+export PATH="$HOME/.gem/ruby/2.5.1/bin:$PATH"
+export PATH="/opt/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/bin:$PATH"
+export PATH="/opt/rubies/ruby-2.5.1/bin:$PATH"
+export PATH="$HOME/.fzf/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # No arguments: `git status`
 # With arguments: acts like `git`
 g() {
