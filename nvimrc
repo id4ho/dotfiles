@@ -2,6 +2,9 @@ let mapleader = " "
 let g:netrw_dirhistmax = 0 " Don't create netrw_dirhist..
 set iskeyword+=- " Make words separated by - treated as a whole symbol (like _)
 
+" rust.vim will overwrite the autopairs setting without the following line
+let g:rust_keep_autopairs_default = 1
+
 " Include plugs
 if filereadable(expand("~/dotfiles/nvim.bundles"))
   source ~/dotfiles/nvim.bundles
@@ -96,3 +99,5 @@ colorscheme OceanicNext
 " Rust formatting
 let g:rustfmt_autosave = 1
 
+" Auto match paren/bracket/braces
+let g:AutoPairs = {'(':')', '[':']', '{':'}'}

@@ -11,5 +11,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'mbbill/undotree'
 Plug 'mhartington/oceanic-next'
+Plug 'jiangmiao/auto-pairs'
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-endwise'
 
 call plug#end()
