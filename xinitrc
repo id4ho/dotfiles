@@ -34,6 +34,9 @@ fi
 
 export TERMINAL=kitty
 
+# set natural scrolling for mouse:
+xinput set-button-map 'MOSART Semi. 2.4G Wireless Mouse Mouse' 1 2 3 5 4 6 7 8 9
+
 feh --bg-scale ~/dotfiles/desktops/current_desktop.png
 xset r rate 200 60
 exec i3

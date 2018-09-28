@@ -1,29 +1,8 @@
 xterm*VT100.Translations: #override \
     Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-    Ctrl <Key> minus: smaller-vt-font() \n\
+    Ctrl Shift <Key> minus: smaller-vt-font() \n\
     Ctrl <Key> plus: larger-vt-font() \n\
     Ctrl <Key> 0: set-vt-font(d)
 
-xterm*faceName: "Ubuntu Mono"
 xterm*saveLines: 20000
-
-! Oceanic-Next Xresources palette
-! xterm*.foreground: #ffffff
-! xterm*.background: #1b2b34
-! xterm*.color0:     #000000
-! xterm*.color1:     #343d46
-! xterm*.color2:     #4f5b66
-! xterm*.color3:     #65737e
-! xterm*.color4:     #a7adba
-! xterm*.color5:     #c0c5ce
-! xterm*.color6:     #cdd3de
-! xterm*.color7:     #d8dee9
-! xterm*.color8:     #ec5f67
-! xterm*.color9:     #f99157
-! xterm*.color10:    #fac863
-! xterm*.color11:    #99c794
-! xterm*.color12:    #62b3b2
-! xterm*.color13:    #6699cc
-! xterm*.color14:    #c594c5
-! xterm*.color15:    #ab7967
