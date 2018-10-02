@@ -4,6 +4,9 @@ set iskeyword+=- " Make words separated by - treated as a whole symbol (like _)
 
 " rust.vim will overwrite the autopairs setting without the following line
 let g:rust_keep_autopairs_default = 1
+let g:AutoPairsMultilineClose = 0
+" Don't set textwidth to 99 or tabspaces to 4..
+let g:rust_recommended_style = 0
 
 " Include plugs
 if filereadable(expand("~/dotfiles/nvim.bundles"))

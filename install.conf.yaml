@@ -39,6 +39,8 @@
       path: "tmux.conf"
     ~/.config/fontconfig/fonts.conf:
       path: "fonts.conf"
+    ~/.rustfmt.toml:
+      path: "rustfmt"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
