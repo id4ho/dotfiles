@@ -15,6 +15,16 @@ alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
 
+# no leak curl/wget
+alias wget="wget -U 'smoke'"
+alias curl="curl --user-agent 'smoke'"
+
+# editor
+export EDITOR="nvim"
+
+# LD_PRELOAD
+export LD_PRELOAD=""
+
 # Copy/Paste
 alias pbcopy="xsel --clipboard --input"
 alias pbpaste="xsel --clipboard --output"
