@@ -41,6 +41,8 @@
       path: "fonts.conf"
     ~/.rustfmt.toml:
       path: "rustfmt"
+    ~/.gdbinit:
+      path: "gdbinit"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
