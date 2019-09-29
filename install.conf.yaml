@@ -43,6 +43,8 @@
       path: "rustfmt"
     ~/.gdbinit:
       path: "gdbinit"
+    ~/.irbrc:
+      path: "irbrc"
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
