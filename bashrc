@@ -42,6 +42,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 
 export PATH="$HOME/.fzf/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:/usr/local/bin/aarch64-none-elf/bin"
+export PATH-"$PATH:/home/jackvnimble/go/bin"
 
 # No arguments: `git status`
 # With arguments: acts like `git`
