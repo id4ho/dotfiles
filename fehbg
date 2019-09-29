@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --bg-scale 'desktops/current_desktop.png'
+feh --bg-scale "$HOME/dotfiles/desktops/current_desktop.png"
