@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 #
 
@@ -11,9 +10,12 @@ alias vi="nvim"
 alias vim="nvim"
 alias ll="ls -al"
 alias ln="ln -v"
+alias ":q"="exit"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
+alias sc="scrot -d 3 ~/Desktop/screenshots/%Y-%m-%d-%T-screenshot.png"
+alias burp="java -jar -Xmx2G ~/BurpSuitePro/burpsuite_pro.jar"
 
 # no leak curl/wget
 alias wget="wget -U 'smoke'"
